@@ -43,3 +43,47 @@ Réaliser le développement Front de cette page web
 - en utilisant les langages HTML/CSS (pas de framework), JavaScript
 - respectant les contraintes fonctionnelles,
 - avec une mise en forme ergonomique, attractive et Responsive
+
+======================================================================================================================
+
+Specifications:
+
+Create the responsive integration of a web page using HTML-CSS-JS.
+
+Fonts to use: "Maven Pro" available from Google Fonts and FontAwesome for the icons.
+
+Mockups provided by the client.
+
+The site should be centered and should not exceed 1280px in width.
+
+Colors to use:
+
+Dark gray: #131313
+Light gray: #303030
+White: #fff
+Red: #f0000
+Description of the page layout and functionalities:
+
+Background: Dark gray: #131313
+
+Header: Logo on the left and the same logo on the right but flipped - Menu centered.
+
+Banner: An image of your choice with the event date as overlay text.
+
+Artist Presentation Zone: Section presenting 4 artists.
+
+Bottom Zone: A first section with 4 news items followed by a section containing an interactive Google Map (address of your choice) and an embedded YouTube video: https://www.youtube.com/watch?v=a_FPOTyL7h4.
+
+Footer: A first section with links to social networks (Facebook / Twitter / Instagram) and a newsletter sign-up. When clicking on the right arrow, an error message should appear if the email is not provided. The last section includes a menu and copyright.
+
+Back to top: Upon scrolling, an up-arrow icon appears. Clicking on it sends the user back to the top of the page with an automatic scroll.
+
+A pop-up should appear when the page loads: when the "Accept" and/or "Decline" button is clicked, the pop-up disappears.
+
+On mobile: All inline elements should switch to a column layout (see the provided mockup).
+
+Mockup the application by creating wireframes for each expected page, adapted to the following formats (advice: do not spend more than one hour on this point):
+
+Tablet
+Mobile
+Develop the Front-end of this web page using HTML/CSS (no frameworks) and JavaScript, respecting the functional constraints, with an ergonomic, attractive, and responsive design.
