@@ -1,0 +1,437 @@
+/*global - desktop*/
+html {
+    background: #131313;
+}
+
+body {
+    padding: 0.313em 3.125em;
+    margin: 0 auto;
+    font-family: 'Maven Pro', sans-serif;
+    max-width: 80em;
+}
+
+section {
+    padding: 0 0.625em;
+}
+
+ul {
+    display: flex;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    margin: 0 0.625em;
+}
+
+a {
+    text-decoration: none;
+}
+
+body,
+a {
+    color: #fff;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin-top: 0;
+    font-weight: 500;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+/* Menu */
+header {
+    padding-top: 0.313em 0em 0.938 em 0em;
+    
+}
+.logo {
+    margin: 0;
+    padding: 0;
+    
+}
+.logo2 {
+    margin: 0;
+    padding: 0;
+    transform: scaleX(-1);
+}
+/*header img:last-child {
+    transform: scaleX(-1);
+}*/
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 0.188em 0em 0.188em;
+    
+}
+
+/* Slideshow */
+.slideshow-container {
+    position: relative;
+}
+
+.slide {
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.alt-text {
+    position: absolute;
+    bottom: 0.625em;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 0.313em;
+}
+.indicateurs-container {
+    text-align: center;
+    margin-top: 0.625em;
+}
+
+.indicateur {
+    display: inline-block;
+    width: 0.75em;
+    height: 0.75em;
+    margin: 0 5px;
+    border: 0.125em solid gray;
+    border-radius: 50%;
+    background: gray;
+    cursor: pointer;
+}
+
+.indicateur.actif {
+    background: black;
+    border-color: white;
+}
+/* Presentation des artistes à ne surtout pas manquer... */
+.presentation {
+    background: #fff;
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
+    color: #131313;
+}
+
+.noms-artistes {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.rubrique-artistes {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.rubrique-artistes div {
+    width: 100%;
+    overflow: hidden;
+}
+
+.rubrique-artistes img {
+    max-width: 100%;
+}
+
+
+/* Actus, maps et youtube */
+.zone-bas {
+    padding-top: 1.25em;
+    padding-bottom: 0.625em;
+    background: #303030;
+}
+
+.actus {
+    margin-bottom: 2.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+    line-height: 1.375em;
+}
+
+.actus div {
+    width: 23.5%;
+}
+
+.supports {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.map {
+    margin-right: 0.625em;
+    width: 30%;
+}
+
+.youtube {
+    width: 40%;
+}
+
+iframe {
+    height: 18.75em;
+    max-width: 100%;
+}
+
+
+/* Footer */
+footer section {
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.partage-reseaux {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logos-reseaux i {
+    margin: 0.188em;
+    margin-top: 0.625em;
+    font-size: 1.563em;
+}
+
+.newsletter {
+    text-align: right;
+    margin-left: 2.188em;
+}
+
+.newsletter p {
+    display: inline-block;
+    margin-right: 0.625em;
+    margin-bottom: 0.625em;
+    text-align: right;
+}
+
+.newsletter span {
+    display: inline-block;
+}
+
+.newsletter input {
+    background: #303030;
+    border: none;
+    padding: 0.625em;
+    height: 1.25em;
+    width: 12.5em;
+    margin-right: 0.625em;
+}
+
+.arrow-input i {
+    vertical-align: middle;
+    font-size: 1.563em;
+    color: #fff;
+}
+
+/* Erreur formulaire mail vide :  Style pour le message d'erreur */
+.message-erreur {
+    display: none;
+    color: red;
+}
+
+
+.menu-2 {
+    background: #303030;
+    padding-right: 0.625em;
+}
+
+.menu-2 p {
+    margin: 0;
+    text-align: right;
+}
+
+
+/* Flèche pour le retour vers le haut de la page */
+.fleche-hdpage i {
+    font-size: 1.875em;
+    position: fixed;
+    bottom: 1.875em;
+    right: 1.875em;
+}
+
+/* Styles pour la fenêtre contextuelle de cookies */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    /*background: rgba(0, 0, 0, 0.7);*/
+    z-index: 1000;
+}
+
+.popup-content {
+    background: #fff;
+    text-align: left;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.25em;
+    border-radius: 0.313em;
+    text-align: center;
+    box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.5);
+    
+}
+
+.popup img {
+    width: 10%;
+    
+}
+.popup h2 {
+    font-size: 1.25em;
+}
+
+.popup p {
+    font-size: 1em;
+    margin: 0.625em 0;
+}
+
+.cookie-button {
+    background: black;
+    color: #fff;
+    border: none;
+    padding: 0.625em 1.25em;
+    margin: 0.625em;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+/*===================================================================================================================================*/
+/*Mise en page petits écrans - mobiles */
+
+@media screen and (max-width: 48em) {
+
+    body {
+        padding: 0.313em 0.625em;
+    }
+
+    section {
+        padding: 0 1.563em;
+    }
+
+    ul {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .presentation {
+        padding-top: 1.25em;
+        padding-bottom: 2.188em;
+    }
+
+    .rubrique-artistes {
+        flex-direction: column;
+    }
+
+    .rubrique-artistes img {
+        max-width: 85%;
+    }
+
+    .actus {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .actus div {
+        width: 100%;
+        margin-bottom: 1.25em;
+    }
+
+    .supports {
+        margin-top: 3.125em;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .map {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .youtube {
+        width: 100%;
+    }
+
+    footer section {
+        padding-top: 0.625em;
+        padding-bottom: 1.25em;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logos-reseaux i {
+        margin-top: 1.063em;
+    }
+
+    .newsletter {
+        flex-direction: column;
+        margin-top: 1.875em;
+        margin-left: 0;
+    }
+
+    .newsletter p {
+        margin: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .newsletter input {
+        margin-top: 0.938em;
+        display: inline-block;
+        width: 18.75em;
+    }
+
+    .newsletter span {
+        display: inline-block;
+    }
+
+    .menu-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+    }
+
+    .menu-2 p {
+        margin-top: 1.875em;
+        padding: 0;
+        text-align: left;
+    }
+
+}

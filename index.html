@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Concerts CEFII 2023" >
+        <meta name='keywords'robots'' content='concerts, cefii, 2023, artistes'index, follow'' >
+        <!-- Pour autoriser l'indexation (sinon noindex) et autoriser de suivre les liens (sinon nofollow) -->
+        <meta name="author" content="Michel Grillon">
+        <title>Salle de Concert du CEFII</title>
+        <!-- Icones -->
+        <script src="https://kit.fontawesome.com/5b0f3f41ba.js" crossorigin="anonymous"></script>
+        <!-- Fontes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+            <!-- Mes fichiers annexes -->
+        <link rel="stylesheet" href="pages/css/styles.css">
+        <script src="pages/scripts/scripts.js"></script>
+
+    </head>
+
+    <body>
+        <!-- Pop-up de Cookies -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <h2>Cookies</h2>
+                <p>Notre site Web utilise des cookies pour améliorer votre expérience. En cliquant sur "Accepter", vous
+                    consentez à l'utilisation de tous les cookies. .</p>
+                <img src="images/cookie-aux-fines-chips.png" alt="Image des cookies" title="Cookies">
+                <div class="popup-buttons">
+                    <button id="accepter-cookie">Accepter</button>
+                    <button id="refuser-cookie">Refuser</button>
+                </div>
+            </div>
+        </div>
+
+        <header>
+                       
+            <!-- Menu -->
+            <div class="menu">
+                <div class="logo"><img src="images/logo.jpg" alt="logo" title="logo"></div>
+                 <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="pages/html/programmation.html">Programmation</a></li>
+                        <li><a href="pages/html/evenements.html">Évènements</a></li>
+                        <li><a href="pages/html/billeterie.html">Billeterie</a></li>
+                        <li><a href="pages/html/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="logo2"><img src="images/logo.jpg" alt="logo" title="logo"></div>
+            </div>
+            <!-- Slideshow -->
+            <div class="slideshow-container">
+                <div class="slide">
+                    <img src="images/slide1.jpg" alt="Date de l'événement 1">
+                    <div class="alt-text">28 octobre 2023</div>
+                </div>
+                <div class="slide">
+                    <img src="images/slide2.jpg" alt="Date de l'événement 2">
+                    <div class="alt-text">10 novembre 2023</div>
+                </div>
+                <div class="slide">
+                    <img src="images/slide3.jpg" alt="Date de l'événement 3">
+                    <div class="alt-text">18 novembre 2023</div>
+                </div>
+            </div>
+
+                <!-- Indicateurs du diaporama -->
+                <div class="indicateurs-container">
+                    <span class="indicateur actif" onclick="afficherImage(0)"></span>
+                    <span class="indicateur" onclick="afficherImage(1)"></span>
+                    <span class="indicateur" onclick="afficherImage(2)"></span>
+                </div>
+
+        </header>
+        <main>
+        <!-- Présentation des artistes -->
+        <section class="presentation">
+            <h1>à ne surtout pas manquer</h1>
+        
+            <article class="rubrique-artistes">
+                <div>
+                    <img src="images/artiste1.jpg" alt="LALALALA" title="LALALALA">
+                    <p class="noms-artistes">Lalala</p>
+                </div>
+                <div>
+                    <img src="images/artiste2.jpg" alt="LILILILI" title="LILILILI">
+                    <p class="noms-artistes">Lililili</p>
+                </div>
+                <div>
+                    <img src="images/artiste3.jpg" alt="LULULULU" title="LULULULU">
+                    <p class="noms-artistes">Lulululu</p>
+                </div>
+                <div>
+                    <img src="images/artiste4.jpg" alt="LOULOULOULOU" title="LOULOULOULOU">
+                    <p class="noms-artistes">Loulouloulou</p>
+                </div>
+            </article>
+        </section>
+        <!-- Actualités -->
+        <section class="zone-bas">
+            <article class="actus">
+                <div>
+                    <h3>Actu 1</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.</p>
+                </div>
+                <div>
+                    <h3>Actu 2</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.</p>
+                </div>
+                <div>
+                    <h3>Actu 3</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.</p>
+                </div>
+                <div>
+                    <h3>Actu 4</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.</p>
+                </div>
+            </article>
+        
+            <!-- Maps + Youtube -->
+            <article class="supports">
+                <div class="map">
+                    <h2>Nous trouver</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2697.2565906136665!2d-0.5616554232262861!3d47.46542907117733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480878b8e7ba21f9%3A0xf0a4ea6efc45f0a0!2sCEFii%20-%20Ecole%20Sup%C3%A9rieure%20du%20Web!5e0!3m2!1sfr!2sfr!4v1697878843224!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+        
+                <div class="youtube">
+                    <h2>En live</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/a_FPOTyL7h4"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </article>
+        </section>
+        
+        </main>
+    <footer>
+        <section>
+            <div class="partage-reseaux">
+                <p>Partagez vos meilleurs moments</p>
+                <div class="logos-reseaux">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://twitter.com/?lang=fr" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/?hl=fr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+    
+            <div class="newsletter">
+                <p>Restez informés sur les actualités</p>
+                <span class="arrow-input">
+                    <input type="text" id="mail" name="mail" placeholder="Renseignez votre e-mail">
+                    <span class="envoi-mail" id="envoyer-email"><i class="fa-sharp fa-solid fa-circle-arrow-right"></i></span>
+                </span>
+                <div class="message-erreur" id="message-erreur">Veuillez renseigner un mail valide.</div>
+            </div>
+
+        </section>
+    
+        <section class="menu-2">
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="CGV.html">CGV</a></li>
+                <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+                <li><a href="mentions.html">Mentions légales</a></li>
+                <li><a href="plan.html">Plan du site</a></li>
+            </ul>
+    
+            <p><!--Le copyright ©-->&copy; Copyright 2023 - Tous droits réservés - CEFII - Michel Grillon</p>
+        </section>
+        
+    </footer>
+    <div class="fleche-hdpage" id="retour-haut">
+        <i class="fa-sharp fa-solid fa-circle-arrow-up"></i>
+    </div>
+    
+    </body>
+
+</html>
